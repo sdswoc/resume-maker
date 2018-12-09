@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>Click once to change and twice to visit link</p>
+<a href="https://www.google.com" id = "btn" ondblclick="change();" >Google</a>
+
+<script type="text/javascript">
+	function change(){
+		event.preventDefault();
+		
+		$("#btn").attr("href", "https://www.yahoo.com");
+		document.getElementById("btn").innerHTML = "Yahoo";
+	}
+</script>
+
+</body>
+</html>
