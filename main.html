@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Fill in details</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+	<div class="resume">
+	<div>
+		<input id="name" type="text" name="name" placeholder="Your Name" style="font-size: 40px;"><br>
+		<input type="text" name="profession" placeholder="Profession" id="pro" style="font-size: 20px;"><br>
+		<input type="email" name="email" placeholder="Email" id="a"><br>
+		<input type="number" name="phno" placeholder="Phone Number" id="a"><br>
+	</div><hr>
+	<div>
+		<table>
+			<tr>
+				<td id="head">
+					<p><b>EDUCATION</b></p>
+				</td>
+				<td id="c">
+					<input type="text" name="deg" placeholder="Degree" style="font-size: 20px;"><button type="submit" id="btn" >+</button><button type="submit" id="btnn" >-</button><br>
+					<input type="text" name="insti" placeholder="Institution"><br>
+					<input type="text" name="fr_un" placeholder="From-Till">
+				
+				<div id="new" style="display:none;">
+					<input type="text" name="deg" placeholder="Degree" style="font-size: 20px;"><br>
+					<input type="text" name="insti" placeholder="Institution"><br>
+					<input type="text" name="fr_un" placeholder="From-Till">
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td id="head">
+					<p><b>EXPERIENCE</b></p>
+				</td>
+				<td id="c">
+					<input type="text" name="deg" placeholder="Position"><br>
+					<input type="text" name="insti" placeholder="Institution"><br>
+					<input type="text" name="fr_un" placeholder="From-Till">
+				</td>
+			</tr>
+			<tr>
+				<td id="head">
+					<p><b>PROFESSIONAL SKILLS</b></p>
+				</td>
+				<td id="c">
+					<input type="text" name="deg" placeholder="Skill"><br>
+					<input type="text" name="insti" placeholder="Skill"><br>
+					<input type="text" name="fr_un" placeholder="Skill">
+				</td>
+			</tr>
+			<tr>
+				<td id="head">
+					<p><b>INTERPERSONAL SKILLS</b></p>
+				</td>
+				<td id="c">
+					<input type="text" name="deg" placeholder="Skill"><br>
+					<input type="text" name="insti" placeholder="Skill"><br>
+					<input type="text" name="fr_un" placeholder="Skill">
+				</td>
+			</tr>
+			<tr id="ach" style="display: none;">
+				<td id="head">
+					<p><b>ACHIEVEMENTS</b></p>
+				</td>
+				<td id="c">
+					<input type="text" name="deg" placeholder="Skill"><br>
+					<input type="text" name="insti" placeholder="Skill"><br>
+					<input type="text" name="fr_un" placeholder="Skill">
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div class="add">
+	<button id="bttn">Add Achievements</button>
+</div>
+</div>
+<script type="text/javascript">
+	document.getElementById("btn").onclick= function(event) {
+		event.preventDefault();
+		document.getElementById("new").style.display = "block";
+	}
+	document.getElementById("bttn").onclick= function(event) {
+		event.preventDefault();
+		document.getElementById("ach").style.display = "block";
+	}
+	//document.getElementById("btnn").onclick= function(event) {
+	//	event.preventDefault();
+	//	document.getElementById("new").style.display = "none";
+	
+</script>
+</body>
+</html>
